@@ -1,17 +1,20 @@
 import React from 'react';
-import { StyledHomeNav } from '../styled'
+import { StyledHomeNav } from '../styled';
+import { StyledLogo } from '../styled';
 
 const HomeNav = () => (
     // Barra de Navegação
     <StyledHomeNav>
     <nav>
         {/* Logo */}
-        <a href="#">
-            <div className="logo nav-logo">
-                <img src="public\assets\images\logo.png" alt="Logo Agromarket" className="logo-img" />
-                <h1 className="logo-text">Agromarket</h1>
-            </div>            
-        </a>
+        <StyledLogo>
+            <a href="#">
+                <div className="logo nav-logo">
+                    <img src="public\assets\images\logo.png" alt="Logo Agromarket" className="logo-img" />
+                    <h1 className="logo-text">Agromarket</h1>
+                </div>            
+            </a>
+        </StyledLogo>
 
         {/* Menu de Navegação */}
         <ul className="nav-menu">
@@ -27,4 +30,4 @@ const HomeNav = () => (
     </StyledHomeNav>
 );
 
-export default HomeNav
+export default HomeNav;

@@ -9,10 +9,14 @@ export const StyledHomeHeader = styled.div`
 `
 
 export const StyledLogo = styled.div`
-    /*HEADER*/
-    header {
-        width: 100%;
-        height: 100vh;
+    /*LOGO*/
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Outfit', sans-serif;
+        font-weight: 700;
+        color: ${({ theme }) => theme.colors.orange};
     }
 `
 

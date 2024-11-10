@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { ThemeProvider } from 'styled-components'
 import { theme } from './theme.js'
 import GlobalStyle from './GlobalStyles.js'
-import HomeNav from './components/HomeNav.jsx'
+import HomeHeader from './components/HomeHeader.jsx'
 
 function App() {
 
@@ -10,7 +10,7 @@ function App() {
     <>
     <ThemeProvider theme={theme}>
         <GlobalStyle />
-        <HomeNav />
+        <HomeHeader />
         {/* Outros componentes */}
     </ThemeProvider>
     </>
