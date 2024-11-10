@@ -4,6 +4,7 @@ import { StyledHomeSection } from '../styled';
 import SectionBar from './SectionBar';
 import HomeProdutos from './HomeProdutos';
 import HomeDescontos from './HomeDescontos';
+import HomeEcossistema from './HomeEcossistema';
 
 const HomeMain = () => (
     // MAIN
@@ -27,7 +28,7 @@ const HomeMain = () => (
 
             {/* Seção Ecossistema */}
             <StyledHomeSection>
-                <HomeProdutos />
+                <HomeEcossistema />
             </StyledHomeSection>
         </main>
     </StyledHomeMain>

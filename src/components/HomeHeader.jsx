@@ -6,7 +6,7 @@ import HomeHero from './HomeHero';
 const HomeHeader = () => (
     // Header
     <StyledHomeHeader>
-        <header>
+        <header className="inicio" id="inicio">
             <HomeNav />
             <HomeHero />
         </header>
