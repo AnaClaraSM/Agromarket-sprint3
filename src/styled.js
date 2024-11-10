@@ -286,6 +286,8 @@ export const StyledHomeCTA = styled.div`
     .cta {
         width: 100%;
         // height: calc(100vh - var(--footer-height) -10px);
+        // Need to be dynamic
+        height: calc(-224px + 100vh);
         background: linear-gradient(288.71deg, #FFEAD7 -21.84%, #FF7A00 40.59%, #FFEAD7 103.02%);
         display: flex;
         flex-direction: column;
