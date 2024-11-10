@@ -1,10 +1,8 @@
 // Imports
+import React from 'react';
 import HomeHeader from '../../components/HomeHeader';
-import HomeProdutos from '../../components/HomeProdutos';
-import HomeDescontos from '../../components/HomeDescontos';
-import HomeEcossistema from '../../components/HomeEcossistema';
-import HomeCTA from '../../components/HomeCTA';
 import Footer from '../../components/Footer';
+import SectionBar from '../../components/SectionBar';
 
 // Content
 
@@ -12,13 +10,14 @@ function Home() {
     return (
         <div className="Home">
             <HomeHeader />
-            <main>  
+            {/* <main>  
                 <HomeProdutos />
                 <HomeDescontos />
                 <HomeEcossistema  />
             </main>
-            <HomeCTA />
+            <HomeCTA /> */}
             <Footer />
+            <SectionBar />
         </div>
     );
 }

@@ -214,24 +214,224 @@ export const StyledHomeProdutos = styled.div`
         font-family: 'Outfit', sans-serif;
         font-size: 26px;
         font-weight: 700;
-        color: var(--orange);
+        color: ${({ theme }) => theme.colors.orange};
     }
 `;
 
 // HomeDescontos
-export const StyledHomeDescontos = styled.div``;
+export const StyledHomeDescontos = styled.div`
+    // SEÇÃO DESCONTOS
+    .descontos .section-header {
+        margin-bottom: 22px;
+    }
+    .container-descontos {
+        display: flex;
+        justify-content: space-around;
+        // align-items: center;
+        gap: 48px;
+        padding: 45px 0;
+    }
+    .card-desconto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-desconto p {
+        width: 260px;
+        text-align: center;
+    }
+    .card-desconto img {
+        width: 180px;
+        margin-bottom: 16px;
+    }
+`;
 
 // HomeEcossistema
-export const StyledHomeEcossistema = styled.div``;
+export const StyledHomeEcossistema = styled.div`
+    // SEÇÃO ECOSSISTEMA
+    .container-ecossistema {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 48px;
+        padding: 45px 0;
+    }
+    .card-ecossistema {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-ecossistema img {
+        width: 240px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+    .card-ecossistema p {
+        width: 240px;
+        text-align: left;
+    }
+
+`;
 
 // HomeBottom
-export const StyledHomeBottom = styled.div``;
+export const StyledHomeBottom = styled.div`
+    .bottom-section {
+        width: 100%;
+        height: 100vh;
+    }
+`;
 
 // HomeCTA
-export const StyledHomeCTA = styled.div``;
+export const StyledHomeCTA = styled.div`
+    .cta {
+        width: 100%;
+        // height: calc(100vh - var(--footer-height) -10px);
+        background: linear-gradient(288.71deg, #FFEAD7 -21.84%, #FF7A00 40.59%, #FFEAD7 103.02%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Outfit', sans-serif;
+    }
+    .cta-h2, .cta-btn, .cta-subtext {
+        text-transform: uppercase;
+    }
+    .cta-h2 {
+        font-size: 16px;
+        margin-bottom: 48px;
+    }
+    .cta-h3 {
+        width: 560px;
+        font-size: 48px;
+        text-transform: capitalize;
+        text-align: center;
+        color: ${({ theme }) => theme.colors.white};
+        margin-bottom: 42px;
+    }
+    .cta-btn {
+        font-family: 'Outfit', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+        color: ${({ theme }) => theme.colors.orange};
+        background-color: ${({ theme }) => theme.colors.white};
+        padding: 12px 46px;
+        margin-bottom: 20px;
+        border-radius: 48px;
+        display: inline-block;
+        transition: box-shadow 0.3s ease;
+    }
+    .cta-btn:hover {
+        box-shadow: 0 0 25px 10px rgba(255, 255, 255, 0.5);
+    }
+    .cta-subtext {
+        color: ${({ theme }) => theme.colors.white};
+        font-size: 12px;
+        font-weight: 600px;
+    }
+`;
 
-// HomeFooter
-export const StyledHomeFooter = styled.div``;
+// Footer
+export const StyledFooter = styled.div`
+    /*FOOTER*/
+    footer {
+        --footer-height: auto;
+        width: 100%;
+        padding: 24px 0 8px 0;
+        background-color: ${({ theme }) => theme.colors.lightGrey};
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .footer-sections {
+        display: flex;
+        /*justify-content: center;*/
+        justify-content: space-between;
+        gap: 72px;
+        margin-bottom: 16px;
+        padding: 0 100px;
+
+    }
+    .footer-sections h5 {
+        font-size: 14px; 
+        font-weight: 600;
+        margin: 15px 0 ;
+    }
+
+    /*Sobre*/
+    .sobre {
+        /*width: 284px;*/
+        width: 25%;
+    }
+    .sobre h4 {
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: ${({ theme }) => theme.colors.orange};
+        margin: 15px 0;
+    }
+    .sobre p {
+        font-size: 12px;
+        margin: 15px 0;
+    }
+    .redes-sociais, .app-stores {
+        display: flex;
+        gap: 10px;
+        margin: 20px 0;
+    }
+    .redes-sociais a, .app-stores a {
+        width: 28px;
+        height: 28px;
+        /*border-radius: 3px;*/
+        background-color: ${({ theme }) => theme.colors.orange};
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        color: white;
+    }
+    .redes-sociais a:hover, .app-stores a:hover {
+        background-color: white;
+        color: ${({ theme }) => theme.colors.orange};
+    }
+
+    /*Suporte*/
+    .suporte ul li, .contato p {
+        font-size: 10px;
+        margin: 15px 0;
+    }
+    .suporte ul li a {
+        color: ${({ theme }) => theme.colors.black};
+    }
+    .suporte ul li a:hover {
+        color: ${({ theme }) => theme.colors.darkGrey};
+    }
+
+    /*Contato*/
+    .contato p {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    /*Copyright*/
+    .copyright {
+        font-family: 'Outfit', sans-serif;
+        font-size: 10px;
+        color: ${({ theme }) => theme.colors.darkGrey};
+    }
+`;
+
+// SectionBar
+export const StyledSectionBar = styled.div`
+    /*Bars*/
+    .section-bar {
+        width: 100%;
+        height: 10px;
+        border: none;
+        background: ${({ theme }) => theme.colors.orangeGradient};
+    }
+`
 
 // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- //
 
