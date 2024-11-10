@@ -1,8 +1,9 @@
-import { useState } from 'react'
-import { ThemeProvider } from 'styled-components'
-import { theme } from './theme.js'
-import GlobalStyle from './GlobalStyles.js'
-import Home from './routes/Home/index.jsx'
+import { useState } from 'react';
+import { ThemeProvider } from 'styled-components';
+import { theme } from './theme.js';
+import GlobalStyle from './GlobalStyles.js';
+import Home from './routes/Home/index.jsx';
+import { Outlet } from "react-router-dom";
 
 function App() {
 
@@ -10,7 +11,8 @@ function App() {
     <>
     <ThemeProvider theme={theme}>
         <GlobalStyle />
-        <Home />
+        <Outlet />
+        {/* <Home /> */}
         {/* Outros componentes */}
     </ThemeProvider>
     </>
