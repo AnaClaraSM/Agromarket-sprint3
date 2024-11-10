@@ -1,9 +1,9 @@
 import React from 'react';
 import { StyledHomeMain } from '../styled';
-import { StyledHomeProdutos } from '../styled';
 import { StyledHomeSection } from '../styled';
 import SectionBar from './SectionBar';
 import HomeProdutos from './HomeProdutos';
+import HomeDescontos from './HomeDescontos';
 
 const HomeMain = () => (
     // MAIN
@@ -19,7 +19,7 @@ const HomeMain = () => (
 
             {/* Seção Descontos */}
             <StyledHomeSection>
-                <HomeProdutos />
+                <HomeDescontos />
             </StyledHomeSection>
 
             {/* Section Divider */}
