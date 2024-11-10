@@ -4,7 +4,7 @@ export const theme = {
       orange: "#ff7a00",
       white: "#ffffff",
       black: "#000000",
-      peach: "ffdab8",
+      peach: "#ffdab8",
       orangeGradient: "linear-gradient(288.71deg, #ffead7 -21.84%, #ff7a00 40.59%, #ffead7 103.02%)",
       darkGrey: "#333333",
       lightGrey: "#ededed",
