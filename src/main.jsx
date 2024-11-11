@@ -12,7 +12,7 @@ import Home from './routes/Home/index.jsx'
 // import Login from './routes/Login/index.jsx'
 // import Registro from './routes/Registro/index.jsx'
 import CadastroConsumidor from './routes/CadastroConsumidor/index.jsx'
-// import CadastroProdutor1 from './routes/CadastroProdutor1/index.jsx'
+import CadastroProdutor1 from './routes/CadastroProdutor1/index.jsx'
 // import CadastroProdutor2 from './routes/CadastroProdutor2/index.jsx'
 import Compras from './routes/Compras/index.jsx'
 
@@ -25,8 +25,8 @@ const router = createBrowserRouter([
             // { path: "/login", element: <Login/>},
             // { path: "/registro", element: <Registro/>},
             { path: "/cadastroConsumidor", element: <CadastroConsumidor/>},
-            // { path: "/cadastroProdutor1", element: <cadastroProdutor1/>},
-            // { path: "/cadastroProdutor2", element: <cadastroProdutor2/>},
+            { path: "/cadastroProdutor1", element: <CadastroProdutor1/>},
+            // { path: "/cadastroProdutor2", element: <CadastroProdutor2/>},
             { path: "/compras", element: <Compras/>},
         ]
     }
