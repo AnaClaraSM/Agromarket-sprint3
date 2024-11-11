@@ -10,7 +10,7 @@ const ComprasNav = () => (
             <StyledLogo>
                 <a href="#">
                     <div className="logo nav-logo">
-                        <img className="logo-img" src="../img/logo.png" alt="Logo Agromarket" />
+                        <img className="logo-img" src="./assets/images/logo.png" alt="Logo Agromarket" />
                         <h1 className="logo-text">Agromarket</h1>
                     </div>
                 </a>
