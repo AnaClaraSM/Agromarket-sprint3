@@ -1,0 +1,4 @@
+Flask        # Framework web para criar a API
+Flask-CORS  # Permitir CORS da API
+oracledb  # Biblioteca para conexão com o banco Oracle
+Faker
