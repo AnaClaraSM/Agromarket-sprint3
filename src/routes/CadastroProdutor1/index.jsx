@@ -46,7 +46,7 @@ function CadastroProdutor1() {
     }
 
     alert("Cadastro realizado com sucesso!");
-    navigate('/cadastro-produtor-2'); // Navega para a segunda página
+    navigate('/cadastroProdutor2'); // Navega para a segunda página
   };
 
   return (
