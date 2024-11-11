@@ -523,6 +523,9 @@ export const StyledComprasBanner = styled.div`
         position: absolute;
         z-index: -1;
         top: 105px;
+        left: 50%;
+        transform: translateX(-50%);
+
     }
     .banner-logo img {
         width: 100px;
