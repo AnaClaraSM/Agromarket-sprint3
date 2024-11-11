@@ -5,6 +5,7 @@ import GlobalStyle from './GlobalStyles.js';
 import App from './App.jsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 // import 'bootstrap/dist/css/bootstrap.min.css';
+import "../node_modules/bootstrap/scss/bootstrap.scss"
 
 // Pages
 import Home from './routes/Home/index.jsx'
@@ -21,6 +22,11 @@ const router = createBrowserRouter([
         element: <App />,
         children: [
             { path: "/", element: <Home /> },
+            // { path: "/login", element: <Login/>},
+            // { path: "/registro", element: <Registro/>},
+            // { path: "/cadastroConsumidor", element: <cadastroConsumidor/>},
+            // { path: "/cadastroProdutor1", element: <cadastroProdutor1/>},
+            // { path: "/cadastroProdutor2", element: <cadastroProdutor2/>},
             { path: "/compras", element: <Compras/>},
         ]
     }
