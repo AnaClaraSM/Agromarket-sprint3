@@ -438,3 +438,97 @@ export const StyledSectionBar = styled.div`
 // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- //
 
 // PÁGINA COMPRAS
+
+// ComprasHeader
+export const StyledComprasHeader = styled.div`
+    header {
+        width: 100%;
+        height: 233px;
+    }
+`
+
+// ComprasNav
+export const StyledComprasNav = styled.div`
+    nav {
+        width: 100%;
+        padding: 18px 16px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: ${({ theme }) => theme.colors.white};
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    /*Nav Logo*/
+    .nav-logo img {
+        width: 48px;
+    }
+    .nav-logo h1 {
+        font-size: 16px;
+    }
+
+    /*Nav Menu*/
+    .nav-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 60px;
+    }
+    .nav-menu li a {
+        font-size: 16px;
+        font-weight: 700;
+        color: ${({ theme }) => theme.colors.orange};
+    }
+    .nav-menu li a:hover {
+        opacity: 80%;
+    }
+
+    /*Nav Icons*/
+    .nav-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .nav-icon i {
+        font-size: 24px;
+        color: ${({ theme }) => theme.colors.orange};
+    }
+    .nav-icon i:hover {
+        opacity: 80%;
+    }
+`
+
+// ComprasBanner
+export const StyledComprasBanner = styled.div`
+    /*Banner*/
+    .header-banner {
+        width: 100%;
+        height: 233px;
+        display: flex;
+        justify-content: center;
+    }
+    .header-banner .banner-fundo {
+        width: 100%;
+        height: auto;
+        z-index: -2;
+        object-fit: cover;
+    }
+    /*Banner Logo*/
+    .banner-logo {
+        position: absolute;
+        z-index: -1;
+        top: 105px;
+    }
+    .banner-logo img {
+        width: 100px;
+    }
+    .banner-logo p {
+        font-size: 37px;
+    }
+`
+
