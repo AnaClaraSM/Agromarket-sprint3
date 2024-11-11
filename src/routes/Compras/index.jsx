@@ -3,6 +3,7 @@ import React from 'react';
 import ComprasHeader from '../../components/ComprasHeader';
 import ComprasMain from '../../components/ComprasMain';
 import Footer from '../../components/Footer';
+import SectionBar from '../../components/SectionBar';
 
 // Content
 
@@ -12,6 +13,8 @@ function Compras() {
             <ComprasHeader />
             <ComprasMain />
             <Footer />
+            {/* Section Divider */}
+            <SectionBar />
         </div>
     );
 }

@@ -13,7 +13,7 @@ export const StyledLogo = styled.div`
         font-weight: 700;
         color: ${({ theme }) => theme.colors.orange};
     }
-`      
+`
 
 // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- //
 
@@ -532,3 +532,240 @@ export const StyledComprasBanner = styled.div`
     }
 `
 
+// ComprasMain
+export const StyledComprasMain = styled.div`
+    // MAIN
+    main {
+        padding: 50px 100px;
+    }
+
+    main h2 {
+        font-size: 28px; /**/
+        font-weight: 700;
+        color: ${({ theme }) => theme.colors.orange};
+    }
+`
+
+// ComprasSection
+export const StyledComprasSection = styled.div`
+    //Section 
+    section {
+        width: 100%;
+    }
+`;
+
+// ComprasCategorias
+export const StyledComprasCategorias = styled.div`
+    .categorias h3 {
+        font-size: 22px; /**/
+        font-weight: 700;
+        color: ${({ theme }) => theme.colors.orange};
+        margin-bottom: 16px;
+    }
+
+    .container-categorias {
+        display: flex;
+        gap: 48px;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0;
+    }
+    .card-categoria, .ver-categorias {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-categoria a, .ver-categorias a {
+        width: 220px;
+        height: 140px;
+    }
+    .card-categoria a {
+        border-radius: 20px;
+        border: 6px solid ${({ theme }) => theme.colors.orange};
+        overflow: hidden;
+    }
+    .card-categoria img {
+        width: 220px;
+        transition: 0.175s linear;
+    }
+    .card-categoria a img:hover {
+        opacity: 80%;
+        scale: 120%;
+        transition: 0.175s linear;
+    }
+
+    .ver-categorias a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .ver-categorias i {
+        font-size: 140px;
+        color: ${({ theme }) => theme.colors.orange};
+        transition: 0.175s linear;
+    }
+    .ver-categorias a i:hover {
+        opacity: 80%;
+        scale: 110%;
+        transition: 0.15s linear;
+    }
+`;
+
+// ComprasProdutos
+export const StyledComprasProdutos = styled.div`
+    .produtos {
+        margin-top: 60px;
+    }
+
+    .section-header p {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    .container-produtos {
+        padding: 80px 62px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 50px;
+    }
+
+    .card-produto {
+        cursor: pointer;
+        width: 180px;
+        height: 220px;
+        border-radius: 4px;
+        padding: 20px 0;
+        box-shadow: ${({ theme }) => theme.shadows.cardShadow};
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        transition: 0.2s linear;
+    }
+    .card-produto:hover {
+        scale: 105%;
+        transition: 0.2s linear;
+    }
+
+    .img-produto img {
+        width: 115px;
+        height: 80px;
+        border-radius: 2px;
+    }
+    .nome-produto h3, .preco-produto {
+        font-family: 'Outfit', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 6px;
+        max-width: 115px;
+        white-space: nowrap; /* Impede o texto de quebrar em várias linhas */
+        overflow: hidden; /* Esconde o texto que ultrapassar a largura */
+        text-overflow: ellipsis; /* Adiciona reticências quando o texto for cortado */
+    }
+    .produtor-produto h4 {
+        font-family: 'Outfit', sans-serif;
+        font-size: 10px;
+        font-weight: 500;
+        color: #333;
+        text-align: center;
+        margin-top: 6px;
+        max-width: 105px;
+        white-space: nowrap; /* Impede o texto de quebrar em várias linhas */
+        overflow: hidden; /* Esconde o texto que ultrapassar a largura */
+        text-overflow: ellipsis; /* Adiciona reticências quando o texto for cortado */
+    }
+    .preco-produto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: ${({ theme }) => theme.colors.orange};
+        margin-top: 24px;
+        padding: 4px 12px;
+        border: 2px solid ${({ theme }) => theme.colors.orange};
+        border-radius: 4px;
+        transition: 0.15s linear;
+    }
+    .preco-produto:hover {
+        color: ${({ theme }) => theme.colors.white};
+        background-color: ${({ theme }) => theme.colors.orange};
+        transition: 0.15s linear;
+    }
+    .preco-produto i {
+        font-size: 17px;
+        margin-right: 5px;
+    }
+`;
+
+// ComprasProdutores
+export const StyledComprasProdutores = styled.div`
+    // PRODUTORES
+
+    // Seção
+    .produtores {
+        margin-top: 60px;
+    }
+    
+    /*Container Produtores*/
+    .container-produtores {
+        width: 100%;
+        padding: 28px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*Divisor de colunas*/
+    .column-divider {
+        width: 1px;
+        height: 320px;
+        background-color: #999999;
+        margin: 24px 12px;
+        flex-shrink: 0; /*Impede a compressão do elemento*/
+    }
+
+    .coluna-produtor {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /*Card Produtor*/
+    .card-produtor {
+        cursor: pointer;
+        width: 300px;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        margin: 28px 12px;
+    }
+    .card-produtor:hover {
+        opacity: 80%;
+    }
+    .img-produtor {
+        width: 105px;
+        border-radius: 50%;
+        border: 5px solid ${({ theme }) => theme.colors.orange};
+    }
+    .texto-produtor {
+        width: 175px;
+    }
+    .texto-produtor h3 {
+        font-size: 24px;
+        font-weight: 600;
+        color: ${({ theme }) => theme.colors.orange};
+    }
+    .texto-produtor h3, .texto-produtor p, .texto-produtor .stars i {
+        max-width: 175px;
+        white-space: nowrap; /* Impede o texto de quebrar em várias linhas */
+        overflow: hidden; /* Esconde o texto que ultrapassar a largura */
+        text-overflow: ellipsis; /* Adiciona reticências quando o texto for cortado */
+    }
+    .texto-produtor p, .texto-produtor .stars i {
+        font-size: 16px;
+    }
+    .stars i {
+        color: ${({ theme }) => theme.colors.orange};
+    }
+`;
