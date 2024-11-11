@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { StyledLogin } from '../../styled';
+import HomeNav from '../../components/HomeNav';
 // import '../styles/login.css';
 
 const Login = () => {
@@ -32,6 +33,7 @@ const Login = () => {
 
     return (
         <StyledLogin>
+            <HomeNav />
             <div className="login">
                 <div className="container d-flex justify-content-center align-items-center">
                     <div className="card">

@@ -1,6 +1,7 @@
 // CadastroProdutor2.js
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { StyledCadastro } from '../../styled';
 
 function CadastroProdutor2() {
   const [formData, setFormData] = useState({
