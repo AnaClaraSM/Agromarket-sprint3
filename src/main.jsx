@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom/client';
 import GlobalStyle from './GlobalStyles.js';
 import App from './App.jsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Pages
 import Home from './routes/Home/index.jsx'
