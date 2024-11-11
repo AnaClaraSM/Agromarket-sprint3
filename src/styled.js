@@ -772,3 +772,201 @@ export const StyledComprasProdutores = styled.div`
         color: ${({ theme }) => theme.colors.orange};
     }
 `;
+
+
+// -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- //
+
+// PÁGINA LOGIN
+export const StyledLogin = styled.div`
+    .login {
+        background: #ffdab8;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background: white;
+        height: 90px;
+    }
+
+    .header-title {
+        color: #ff7a00;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .container {
+        height: calc(100vh - 90px);
+        width: 100vw;
+    }
+
+    .card {
+        width: 626px;
+        height: 608px;
+        border-radius: 36px
+    }
+
+    .container-login{
+        font-weight: bold;
+    }
+
+    .bg {
+        color: #ff7a00;
+    }
+    .btn {
+        background-color: #ff7a00;
+        border: none;
+        color: white;
+    }
+    .containe-bg{
+        color: gray;
+        font-size: small;
+    }
+
+    .input-color {
+        background-color: #D9D9D9 ;
+    }
+`;
+
+
+// -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- //
+
+// PÁGINA REGISTRO
+export const StyledRegistro = styled.div`
+    header {
+        background: white;
+        height: 90px;
+    }
+
+    .header-title {
+        color: #ff7a00;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .registro {
+        background: #ffdab8;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        height: calc(100vh - 90px);
+        width: 100vw;
+    }
+
+    .card {
+        width: 626px;
+        height: 608px;
+        border-radius: 36px
+    }
+
+    .container-login {
+        font-weight: bold;
+    }
+
+    .bg {
+        color: #ff7a00;
+    }
+
+    .btn {
+        background-color: #ff7a00;
+        border: none;
+        color: white;
+    }
+
+    .containe-bg {
+        color: black;
+        font-size: small;
+    }
+
+    .input-color {
+        background-color: #D9D9D9;
+    }
+
+    .container-perfil img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    .container-cadastro {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .container-text {
+        font-size: medium;
+    }
+`;
+
+
+// -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- //
+
+// PÁGINA CADASTRO
+export const StyledCadastro = styled.div`
+    header {
+        background: white;
+        height: 90px;
+    }
+
+    .header-title {
+        color: #ff7a00;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .cadastro {
+        background: #ffdab8;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        height: calc(100vh - 90px);
+        width: 100vw;
+    }
+
+    .card {
+        /* display: flex;
+    justify-items: center; */
+        height: 608px;
+        border-radius: 36px
+    }
+
+    .container-login {
+        font-weight: bold;
+        color: #ff7a00;
+    }
+
+    .bg {
+        color: #ff7a00;
+    }
+
+    .btn {
+        background-color: #ff7a00;
+        border: none;
+        color: white;
+    }
+
+    .form-label {
+        color: #ff7a00;
+        font-weight: bold;
+    }
+
+    .containe-bg {
+        color: gray;
+        font-size: large;
+        font-weight: bold;
+    }
+
+    .input-color {
+        background-color: #D9D9D9;
+    }
+`;

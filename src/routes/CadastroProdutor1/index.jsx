@@ -22,6 +22,17 @@ function CadastroProdutor1() {
     }));
   };
 
+  const calcularIdade = (dataNascimento) => {
+    const hoje = new Date();
+    const nascimento = new Date(dataNascimento);
+    let idade = hoje.getFullYear() - nascimento.getFullYear();
+    const mes = hoje.getMonth() - nascimento.getMonth();
+    if (mes < 0 || (mes === 0 && hoje.getDate() < nascimento.getDate())) {
+      idade--;
+    }
+    return idade;
+  };
+
   const validarFormulario = (e) => {
     e.preventDefault();
     const { nomeCompleto, cpf, email, senha, confirmarSenha, dataNascimento, rg, telefone } = formData;
@@ -45,8 +56,14 @@ function CadastroProdutor1() {
       return;
     }
 
+    // Validação de idade mínima (18 anos)
+    if (calcularIdade(dataNascimento) < 18) {
+      alert("Você deve ter pelo menos 18 anos para se registrar.");
+      return;
+    }
+
     alert("Cadastro realizado com sucesso!");
-    navigate('/cadastroProdutor2'); // Navega para a segunda página
+    navigate('/cadastro-produtor-2'); // Navega para a segunda página
   };
 
   return (
