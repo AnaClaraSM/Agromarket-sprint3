@@ -788,43 +788,81 @@ export const StyledLogin = styled.div`
 
     header {
         background: white;
+        width: 100%;
         height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 1000;
+        box-shadow: ${({ theme }) => theme.shadows.navShadow};
+
+    }
+    
+    header img {
+        width: 54px;
+        height: 54px;
     }
 
-    .header-title {
+    .logo-text {
         color: #ff7a00;
-        font-size: 30px;
+        font-size: 16px;
         font-weight: bold;
     }
 
     .container {
-        height: calc(100vh - 90px);
-        width: 100vw;
+        height: 100vh;
+        width: 100%;
     }
 
     .card {
-        width: 626px;
-        height: 608px;
-        border-radius: 36px
+        width: 500px;
+        // height: 450px;
+        border-radius: 36px;
+        padding: 12px 30px;
+        margin: 0;
+        top: 50%;
+        transform: translateY(-60%);
+        
     }
 
     .container-login{
+        font-size: 24px;
         font-weight: bold;
     }
 
     .bg {
         color: #ff7a00;
     }
+
+    label {
+        font-size: 14px;
+    }
+    input {
+        font-size: 14px;
+    }
+
     .btn {
         background-color: #ff7a00;
         border: none;
-        color: white;
+        color: white;      
+        border-radius: 50px;
     }
-    .containe-bg{
+    .login-btn {
+        font-size: 14px;
+        width: auto;
+        padding: 10px 20px;
+    }
+    .container-bg{
         color: gray;
-        font-size: small;
+        font-size: 12px;
     }
-
+    .forgot-pw {
+        font-size: 10px;
+    }
+    .register-text {
+        font-size: 12px;
+    }
     .input-color {
         background-color: #D9D9D9 ;
     }
@@ -968,5 +1006,39 @@ export const StyledCadastro = styled.div`
 
     .input-color {
         background-color: #D9D9D9;
+    }
+`;
+
+
+
+// -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- //
+
+// LOGO NAV
+export const StyledLogoNav = styled.div`
+    // Navbar
+    nav {
+        width: 100%;
+        padding: 18px 16px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: ${({ theme }) => theme.colors.white};
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // z-index: 1000;
+        box-shadow: ${({ theme }) => theme.shadows.navShadow};
+    }
+
+    // Logo
+    .nav-logo .logo-img {
+        width: 48px;
+    }
+    .nav-logo .logo-text {
+        font-size: 20px;
+        color: ${({ theme }) => theme.colors.orange};
+        font-family: 'Outfit', sans-serif;
+        font-weight: 700;
+        margin: 0;
     }
 `;
