@@ -2,7 +2,7 @@
 
 Link do Projeto: https://github.com/AnaClaraSM/Agromarket-sprint3
 
-Link do Vídeo Pitch:
+Link do Vídeo Pitch (Sprint 3): https://youtu.be/MXoplfVYxyc
 
 ## Instruções para executar o projeto
 
