@@ -1,0 +1,50 @@
+[
+  {
+    "cnpj": "48.666.077/0001-41",
+    "cpf": "049.949.51-7",
+    "id_produtor": 31,
+    "nome": "usuario1",
+    "nome_fantasia": "Fazenda 1",
+    "tipo_producao": "Tipo de Produção 1"
+  },
+  {
+    "cnpj": "23.528.801/0001-24",
+    "cpf": "729.977.78-3",
+    "id_produtor": 32,
+    "nome": "usuario2",
+    "nome_fantasia": "Fazenda 2",
+    "tipo_producao": "Tipo de Produção 2"
+  },
+  {
+    "cnpj": "34.259.726/0001-86",
+    "cpf": "961.003.23-5",
+    "id_produtor": 33,
+    "nome": "usuario3",
+    "nome_fantasia": "Fazenda 3",
+    "tipo_producao": "Tipo de Produção 3"
+  },
+  {
+    "cnpj": "42.445.045/0001-00",
+    "cpf": "072.392.32-0",
+    "id_produtor": 34,
+    "nome": "usuario4",
+    "nome_fantasia": "Fazenda 4",
+    "tipo_producao": "Tipo de Produção 4"
+  },
+  {
+    "cnpj": "67.226.663/0001-86",
+    "cpf": "458.673.19-2",
+    "id_produtor": 35,
+    "nome": "usuario5",
+    "nome_fantasia": "Fazenda 5",
+    "tipo_producao": "Tipo de Produção 5"
+  },
+  {
+    "cnpj": "65.984.709/0001-43",
+    "cpf": "291.594.91-8",
+    "id_produtor": 78,
+    "nome": "usuario5",
+    "nome_fantasia": "Fazenda 5",
+    "tipo_producao": "Tipo de Produção 5"
+  }
+]
