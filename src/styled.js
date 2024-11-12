@@ -1006,7 +1006,7 @@ export const StyledCadastro = styled.div`
     label {
         font-size: 14px;
     }
-    input {
+    input, select, option {
         font-size: 14px;
     }
 
@@ -1018,7 +1018,7 @@ export const StyledCadastro = styled.div`
     }
     .cadastro-btn {
         font-size: 14px;
-        width: 40%;
+        width: 45%;
         padding: 10px 20px;
     }
 
