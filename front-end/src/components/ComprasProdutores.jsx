@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { StyledComprasProdutores } from "../styled";
+import { LoadingContainer, StyledComprasProdutores } from "../styled";
 import SectionBar from "./SectionBar";
 import ErrorComponent from "./ErrorComponent";
 import produtoresDataJsonReservado from "../helper/produtores-data-reserva.json";
@@ -27,7 +27,12 @@ const ComprasProdutores = () => {
       });
   }, []);
 
-  if (loading) return <p>carregando produtores...</p>;
+  if (loading)
+    return (
+      <LoadingContainer>
+        <p>Carregando produtores...</p>
+      </LoadingContainer>
+    );
   if (error && produtores.length === 0) {
     // Essa validação só está sendo feita por precaução caso o não de para hospedar o back-end
     return (
