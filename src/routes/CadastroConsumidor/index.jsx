@@ -40,12 +40,12 @@ const CadastroConsumidor = () => {
     return (
         <StyledCadastro>
             <div className="cadastro">
+                <header className="d-flex justify-content-center">
+                    <img clasName="logo-img" src="public\assets\images\logo.png" alt="" />
+                    <div className="logo-text">AGROMARKET</div>
+                </header>
                 <div className="container d-flex justify-content-center align-items-center">
                     <div className="card px-5">
-                        <header className="d-flex justify-content-center">
-                            <img src="../img/logo.png" alt="Logo Agromarket" />
-                            <div className="header-title mt-4">AGROMARKET</div>
-                        </header>
                         <div className="pt-5">
                             <h2 className="text-center container-login">CADASTRO</h2>
                             <p className="text-center containe-bg">CONSUMIDOR</p>

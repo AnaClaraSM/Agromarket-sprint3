@@ -947,17 +947,6 @@ export const StyledRegistro = styled.div`
 
 // PÁGINA CADASTRO
 export const StyledCadastro = styled.div`
-    header {
-        background: white;
-        height: 90px;
-    }
-
-    .header-title {
-        color: #ff7a00;
-        font-size: 30px;
-        font-weight: bold;
-    }
-
     .cadastro {
         background: #ffdab8;
         width: 100vw;
@@ -966,25 +955,61 @@ export const StyledCadastro = styled.div`
         padding: 0;
     }
 
+    header {
+        background: white;
+        width: 100%;
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 1000;
+        box-shadow: ${({ theme }) => theme.shadows.navShadow};
+    }
+
+    header img {
+        width: 54px;
+        height: 54px;
+    }
+
+    .logo-text {
+        color: #ff7a00;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
     .container {
-        height: calc(100vh - 90px);
+        height: 100vh;
         width: 100vw;
     }
 
     .card {
         /* display: flex;
-    justify-items: center; */
-        height: 608px;
-        border-radius: 36px
+        justify-items: center; */
+        // width: 500px;
+        // height: 450px;
+        border-radius: 36px;
+        padding: 12px 30px;
+        margin: 0;
+        top: 50%;
+        transform: translateY(-60%);
     }
 
     .container-login {
         font-weight: bold;
         color: #ff7a00;
+        font-size: 24px;
     }
 
     .bg {
         color: #ff7a00;
+    }
+
+    label {
+        font-size: 14px;
+    }
+    input {
+        font-size: 14px;
     }
 
     .btn {
@@ -998,7 +1023,7 @@ export const StyledCadastro = styled.div`
         font-weight: bold;
     }
 
-    .containe-bg {
+    .container-bg {
         color: gray;
         font-size: large;
         font-weight: bold;
