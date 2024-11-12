@@ -6,7 +6,7 @@ Link do Vídeo Pitch:
 
 ## Instruções para executar o projeto
 
-1.Baixe o arquivo zip
+1. Baixe o arquivo zip
 2. Descompacte o arquivo
 3. Abra a pasta do projeto no Visual Studio Code
 4. Abra o terminal (Ctrl + ') e digite "npm install";
