@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyledHomeHero } from '../styled';
+import {Link} from 'react-router-dom';
 
 const HomeHero = () => (
     <StyledHomeHero>
@@ -11,7 +12,8 @@ const HomeHero = () => (
                     <p className="hero-titulo">Troque seus resíduos por descontos e compre direto dos produtores</p>
                     <p className="hero-paragrafo">O melhor lugar para cuidar da sua alimentação, do seu bolso e do nosso planeta.</p>
                 </div>
-                <a href="#" className="hero-btn">Comece Já</a>
+                {/* <a href="#" className="hero-btn">Comece Já</a> */}
+                <Link className="hero-btn" to="/registro">Comece Já</Link>
             </div>
         </div>
     </StyledHomeHero>

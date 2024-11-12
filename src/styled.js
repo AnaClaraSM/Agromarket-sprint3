@@ -63,7 +63,7 @@ export const StyledHomeNav = styled.div`
         align-items: center;
         gap: 60px;
     }
-    .nav-menu li a {
+    .nav-menu li a, .nav-menu li link {
         font-family: 'Outfit', sans-serif;
         font-size: 14px;
         font-weight: 700;
