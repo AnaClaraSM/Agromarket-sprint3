@@ -45,19 +45,21 @@ const CadastroConsumidor = () => {
                     <div className="logo-text">AGROMARKET</div>
                 </header>
                 <div className="container d-flex justify-content-center align-items-center">
-                    <div className="card px-5">
-                        <div className="pt-5">
-                            <h2 className="text-center container-login">CADASTRO</h2>
-                            <p className="text-center containe-bg">CONSUMIDOR</p>
+                    {/*  px-5 */}
+                    <div className="card">
+                        <div className="">
+                            <h2 className="text-center container-cadastro">CADASTRO</h2>
+                            <p className="text-center container-bg">CONSUMIDOR</p>
                         </div>
 
                         <form className="form-group" onSubmit={validarFormulario}>
-                            <div className="row pt-3">
+                            {/* mt-4 */}
+                            <div className="row">
                                 <div className="col-6">
                                     <label className="form-label mt-4 fw-semibold">NOME COMPLETO</label>
                                     <input
                                         type="text"
-                                        className="form-control input-color p-3"
+                                        className="form-control input-color"
                                         name="nome"
                                         value={formData.nome}
                                         onChange={handleChange}
@@ -68,7 +70,7 @@ const CadastroConsumidor = () => {
                                     <label className="form-label mt-4 fw-semibold">EMAIL</label>
                                     <input
                                         type="email"
-                                        className="form-control input-color p-3"
+                                        className="form-control input-color"
                                         name="email"
                                         value={formData.email}
                                         onChange={handleChange}
@@ -76,10 +78,10 @@ const CadastroConsumidor = () => {
                                 </div>
 
                                 <div className="col-6">
-                                    <label className="form-label mt-4 fw-semibold">SENHA</label>
+                                    <label className="form-label mt-3 fw-semibold">SENHA</label>
                                     <input
                                         type="password"
-                                        className="form-control input-color p-3"
+                                        className="form-control input-color"
                                         name="senha"
                                         value={formData.senha}
                                         onChange={handleChange}
@@ -87,10 +89,10 @@ const CadastroConsumidor = () => {
                                 </div>
 
                                 <div className="col-6">
-                                    <label className="form-label mt-4 fw-semibold">CONFIRME A SENHA</label>
+                                    <label className="form-label mt-3 fw-semibold">CONFIRME A SENHA</label>
                                     <input
                                         type="password"
-                                        className="form-control input-color p-3"
+                                        className="form-control input-color"
                                         name="confirmarSenha"
                                         value={formData.confirmarSenha}
                                         onChange={handleChange}
@@ -100,15 +102,14 @@ const CadastroConsumidor = () => {
 
                             <div className="d-flex btn-color d-flex justify-content-center pt-5">
                                 <button
-                                    className="form-control bnt-color mt-3 btn btn-info btn-block btn-lg"
+                                    className="cadastro-btn form-control bnt-color mt-1 btn btn-info btn-block btn-lg cadastro-btn"
                                     type="submit"
-                                    style={{ width: '250px', height: '50px', borderRadius: '40px' }}
                                 >
                                     CADASTRAR
                                 </button>
                             </div>
-                            <div className="container-botton py-4 d-flex justify-content-center">
-                                <p className="mb-0 bg">
+                            <div className="container-botton mt-4 mb-2 d-flex justify-content-center">
+                                <p className="mb-0 pb-0 bg login-text">
                                     JÁ TEM UMA CONTA? <a href="/login" className="bg fw-bold">ENTRE AQUI</a>
                                 </p>
                             </div>

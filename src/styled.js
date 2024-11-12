@@ -984,18 +984,16 @@ export const StyledCadastro = styled.div`
     }
 
     .card {
-        /* display: flex;
-        justify-items: center; */
         // width: 500px;
         // height: 450px;
         border-radius: 36px;
-        padding: 12px 30px;
+        padding: 28px 48px;
         margin: 0;
         top: 50%;
         transform: translateY(-60%);
     }
 
-    .container-login {
+    .container-cadastro {
         font-weight: bold;
         color: #ff7a00;
         font-size: 24px;
@@ -1016,6 +1014,12 @@ export const StyledCadastro = styled.div`
         background-color: #ff7a00;
         border: none;
         color: white;
+        border-radius: 50px;
+    }
+    .cadastro-btn {
+        font-size: 14px;
+        width: 40%;
+        padding: 10px 20px;
     }
 
     .form-label {
@@ -1025,10 +1029,12 @@ export const StyledCadastro = styled.div`
 
     .container-bg {
         color: gray;
-        font-size: large;
+        font-size: 14px;
         font-weight: bold;
     }
-
+    .login-text {
+        font-size: 12px;
+    }
     .input-color {
         background-color: #D9D9D9;
     }
