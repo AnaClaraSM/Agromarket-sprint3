@@ -955,6 +955,9 @@ export const StyledRegistro = styled.div`
         height: 150px;
         border-radius: 50%;
     }
+    //     .login-text {
+    //     font-size: 12px;
+    // }
 `;
 
 

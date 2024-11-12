@@ -53,7 +53,7 @@ const Registro = () => {
                                 </div>
 
                                 <div className="container-botton d-flex justify-content-center pt-4 pb-3">
-                                    <p className="container-text mb-0">
+                                    <p className="container-text mb-0 login-text">
                                         JÁ TEM UMA CONTA? <a href="/login" className="bg fw-bold">ENTRE AQUI</a>
                                     </p>
                                 </div>
