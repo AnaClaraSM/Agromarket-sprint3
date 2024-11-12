@@ -35,7 +35,8 @@ def listar_usuarios():
     try:
         connection = db.get_connection()
         with connection.cursor() as cursor:
-            cursor.execute("SELECT id_usuario, nome, email, funcao FROM usuario")
+            cursor.execute("SELECT id_usuario, nome, email, funcao FROM usuario FETCH FIRST 6 ROWS ONLY")
+            # cursor.execute("SELECT id_usuario, nome, email, funcao FROM usuario")
             usuarios = cursor.fetchall()
             
             usuarios_lista = [
@@ -61,7 +62,14 @@ def listar_produtores():
                 SELECT p.id_produtor, p.cpf, p.cnpj, u.nome, p.nome_fantasia, p.tipo_producao 
                 FROM produtor p
                 JOIN usuario u ON p.id_usuario = u.id_usuario
+                FETCH FIRST 6 ROWS ONLY
             """)
+
+            # cursor.execute("""
+            #     SELECT p.id_produtor, p.cpf, p.cnpj, u.nome, p.nome_fantasia, p.tipo_producao 
+            #     FROM produtor p
+            #     JOIN usuario u ON p.id_usuario = u.id_usuario
+            # """)
             produtores = cursor.fetchall()
             
             produtores_lista = [
