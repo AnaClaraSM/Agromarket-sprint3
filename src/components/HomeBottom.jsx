@@ -11,7 +11,7 @@ const HomeBottom = () => (
             <HomeCTA />
         </StyledHomeSection>
         <Footer />
-        <SectionBar />
+        {/* <SectionBar /> */}
     </StyledHomeBottom>
 ); 
 export default HomeBottom;

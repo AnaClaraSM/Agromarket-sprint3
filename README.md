@@ -1,8 +1,14 @@
-# React + Vite
+# Agromarket
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Link do Projeto: https://github.com/AnaClaraSM/Agromarket-sprint3
 
-Currently, two official plugins are available:
+Link do Vídeo Pitch:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Instruções para executar o projeto
+
+1.Baixe o arquivo zip
+2. Descompacte o arquivo
+3. Abra a pasta do projeto no Visual Studio Code
+4. Abra o terminal (Ctrl + ') e digite "npm install";
+5. Em seguida digite "npm run dev".
+6. Abra o link retornado pelo terminal.

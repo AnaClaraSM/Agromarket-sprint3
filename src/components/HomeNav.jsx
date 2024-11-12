@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyledHomeNav } from '../styled';
 import { StyledLogo } from '../styled';
+import {Link} from 'react-router-dom';
 
 const HomeNav = () => (
     // Barra de Navegação
@@ -25,7 +26,9 @@ const HomeNav = () => (
         </ul>
 
         {/* Botão de Entrada */}
-        <a className="nav-btn" href="./pages/login.html">Entrar/Cadastrar</a>
+        {/* <a className="nav-btn" href="./pages/login.html">Entrar/Cadastrar</a> */}
+        <Link className="nav-btn" to="/login">Entrar/Cadastrar</Link>
+
     </nav>
     </StyledHomeNav>
 );

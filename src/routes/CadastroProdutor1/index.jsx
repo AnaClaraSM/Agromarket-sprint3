@@ -62,13 +62,11 @@ function CadastroProdutor1() {
       alert("Você deve ter pelo menos 18 anos para se registrar.");
       return;
     }
-
-    alert("Cadastro realizado com sucesso!");
     navigate("/cadastroProdutor2");
   };
 
   const handleSair = () => {
-    navigate("/login");
+    navigate("/registro");
   };
 
   return (

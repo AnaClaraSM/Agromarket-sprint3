@@ -14,7 +14,7 @@ function Compras() {
             <ComprasMain />
             <Footer />
             {/* Section Divider */}
-            <SectionBar />
+            {/* <SectionBar /> */}
         </div>
     );
 }
