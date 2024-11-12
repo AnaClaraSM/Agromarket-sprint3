@@ -822,8 +822,7 @@ export const StyledLogin = styled.div`
         padding: 12px 30px;
         margin: 0;
         top: 50%;
-        transform: translateY(-60%);
-        
+        transform: translateY(-60%);  
     }
 
     .container-login{
@@ -873,38 +872,59 @@ export const StyledLogin = styled.div`
 
 // PÁGINA REGISTRO
 export const StyledRegistro = styled.div`
+.registro {
+    background: #ffdab8;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
     header {
         background: white;
+        width: 100%;
         height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 1000;
+        box-shadow: ${({ theme }) => theme.shadows.navShadow};
     }
 
-    .header-title {
+    header img {
+        width: 54px;
+        height: 54px;
+    }
+
+    .logo-text {
         color: #ff7a00;
-        font-size: 30px;
+        font-size: 16px;
         font-weight: bold;
     }
 
-    .registro {
-        background: #ffdab8;
-        width: 100vw;
-        height: 100vh;
-        margin: 0;
-        padding: 0;
-    }
 
     .container {
-        height: calc(100vh - 90px);
-        width: 100vw;
+        height: 100vh;
+        width: 100%;
     }
 
     .card {
-        width: 626px;
-        height: 608px;
-        border-radius: 36px
+        width: 600px;
+        // height: 450px;
+        border-radius: 36px;
+        padding: 12px 30px;
+        margin: 0;
+        top: 50%;
+        transform: translateY(-60%);  
+    }
+    .container-registro {
+        font-weight: bold;
+        font-size: 24px;
     }
 
-    .container-login {
+    .container-perfil {
         font-weight: bold;
+        font-size: 18px;
     }
 
     .bg {
@@ -916,10 +936,14 @@ export const StyledRegistro = styled.div`
         border: none;
         color: white;
     }
-
-    .containe-bg {
-        color: black;
-        font-size: small;
+    // .registro-btn {
+    //     font-size: 14px;
+    //     width: auto;
+    //     padding: 10px 20px;
+    // }
+    .container-bg{
+        color: gray;
+        font-size: 12px;
     }
 
     .input-color {
@@ -930,15 +954,6 @@ export const StyledRegistro = styled.div`
         width: 150px;
         height: 150px;
         border-radius: 50%;
-    }
-
-    .container-cadastro {
-        font-weight: bold;
-        font-size: 20px;
-    }
-
-    .container-text {
-        font-size: medium;
     }
 `;
 

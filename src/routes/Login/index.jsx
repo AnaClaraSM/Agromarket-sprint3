@@ -38,6 +38,7 @@ const Login = () => {
                     <img clasName="logo-img" src="public\assets\images\logo.png" alt="" />
                     <div className="logo-text">AGROMARKET</div>
                 </header>
+                
                 <div className="container d-flex justify-content-center align-items-center">
                     <div className="card">
                         <form className="form-group" onSubmit={validarLogin}>
