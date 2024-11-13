@@ -37,6 +37,10 @@ const CadastroConsumidor = () => {
         navigate('/compras');
     };
 
+    const handleSair = () => {
+        navigate("/registro");
+    };
+
     return (
         <StyledCadastro>
             <div className="cadastro">
@@ -100,9 +104,15 @@ const CadastroConsumidor = () => {
                                 </div>
                             </div>
 
-                            <div className="d-flex btn-color d-flex justify-content-center pt-5">
+                            <div className="d-flex btn-color d-flex justify-content-between pt-5">
+                                <button onClick={handleSair}
+                                    className="cadastro-btn form-control bnt-color mt-1 btn btn-info btn-block btn-lg cadastro-btn col-6"
+                                    type="submit"
+                                >
+                                   SAIR
+                                </button>
                                 <button
-                                    className="cadastro-btn form-control bnt-color mt-1 btn btn-info btn-block btn-lg cadastro-btn"
+                                    className="cadastro-btn form-control bnt-color mt-1 btn btn-info btn-block btn-lg cadastro-btn col-6"
                                     type="submit"
                                 >
                                     CADASTRAR
