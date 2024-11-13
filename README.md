@@ -1,6 +1,6 @@
 # Agromarket
 
-Link do Vídeo Pitch (Sprint 3): https://youtu.be/MXoplfVYxyc
+Link do Vídeo Pitch (Sprint 3): https://youtu.be/GnCE-C0LuNw
 
 ## Instruções para executar o projeto back-end e front-end
 
